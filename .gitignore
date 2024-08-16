@@ -5,3 +5,4 @@
 *.backup
 src/src/__pycache__/*
 src/src/tests/__pycache__/*
+src/src/utils/__pycache__/*
