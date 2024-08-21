@@ -1,5 +1,4 @@
 import requests
-import os
 from support.config import API_BASE_URL
 
 
@@ -11,16 +10,16 @@ class APIClient:
         }
 
     def get(self, endpoint):
-        url = os.path.join(self.base_url, endpoint)
+        url = f"{self.base_url}{endpoint}"
         response = requests.get(url, headers=self.headers)
         return response
 
     def post(self, endpoint, data):
-        url = os.path.join(self.base_url, endpoint)
+        url = f"{self.base_url}{endpoint}"
         response = requests.post(url, json=data, headers=self.headers)
         return response
 
     def delete(self, endpoint):
-        url = os.path.join(self.base_url, endpoint)
+        url = f"{self.base_url}{endpoint}"
         response = requests.delete(url, headers=self.headers)
         return response

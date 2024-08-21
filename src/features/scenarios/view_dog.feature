@@ -1,7 +1,7 @@
 Feature: View a dog in the system
 
   Scenario: View a dog successfully
-    Given I have a valid dog ID
+    Given I have fetched an existing dog ID
     When I send a GET request to view the dog
     Then the response status code should be 200
     And the response should match the dog retrieval schema
@@ -10,4 +10,4 @@ Feature: View a dog in the system
     Given I have a non-existing dog ID
     When I send a GET request to view the dog
     Then the response status code should be 404
-    And the response body should contain "Dog not found"
+    And the response body should contain "Doggo Not Found"

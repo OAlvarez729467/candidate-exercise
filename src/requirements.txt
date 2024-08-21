@@ -1,4 +1,0 @@
-behave
-requests
-jsonschema
-python-dotenv

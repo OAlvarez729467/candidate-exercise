@@ -1,0 +1,10 @@
+behave~=1.2.6
+requests~=2.32.3
+jsonschema~=4.23.0
+python-dotenv~=1.0.1
+names~=0.3.0
+pytest
+
+utils~=1.0.2
+pytest-bdd~=7.2.0
+setuptools~=72.2.0
